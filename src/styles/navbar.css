@@ -33,9 +33,10 @@
 }
 
 .header .social-links a{
-    @apply text-xl flex items-center justify-center
+    @apply text-base flex items-center justify-center
  text-white mr-2 rounded-full w-10 h-10;
-background: rgba(255, 255, 255, 0.1);
+background: rgba(255, 255, 255, 0.2);
+line-height: 1;
 }
 
 .header .social-links a:hover{

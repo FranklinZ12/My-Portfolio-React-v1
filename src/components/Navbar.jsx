@@ -1,16 +1,16 @@
 import { useState } from 'react';
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useMatch } from 'react-router-dom';
 import '../styles/navbar.css';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const match = useMatch('/');
 
   return (
-    <header className='header'>
+    <header className={`header ${!match ? 'header-top' : ''}`}>
       <div className='container'>
         <h1>
           <Link 
-          className='a'
           to='/'>
             Franklin Zapata
           </Link>
@@ -19,8 +19,10 @@ const Navbar = () => {
           I'm a passionate
           <span> Front-End Developer</span> from Colombia
         </h2>
-        <nav className='navbar'>
-          <ul>
+        <nav className={`navbar ${open ? 'navbar-mobile' : '' }`}>
+          <ul
+          onClick={() => setOpen(false)}
+          >
             <li>
               <NavLink 
               className={({ isActive }) => `nav-link` + (isActive ? ' active' : '')}
@@ -63,11 +65,11 @@ const Navbar = () => {
             </li>
           </ul>   
             <i 
+            onClick={() => setOpen(!open)}
             className={
               `mobile-nav-toggle 
-              fa-solid fa-${open ? "x" : "bars"}`
+              bi bi-${open ? "x" : "list"}`
             }
-            onClick={() => setOpen(!open)}
             />
         </nav>
 
@@ -78,7 +80,7 @@ const Navbar = () => {
             rel='noopener noreferrer'
             className='linkedin'
             >
-            <i className="fa-brands fa-linkedin"></i>
+            <i className="bi bi-linkedin"></i>
           </a>
           <a
             href='https://github.com/FranklinZ12'
@@ -86,10 +88,9 @@ const Navbar = () => {
             rel='noopener noreferrer'
             className='github'
             >
-            <i className="fa-brands fa-github-square"></i>
+            <i className="bi bi-github"></i>
           </a>
         </div>
-
       </div>
     </header>
   )
