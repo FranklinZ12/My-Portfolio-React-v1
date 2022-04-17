@@ -1,8 +1,71 @@
-import React from 'react'
+import user from 'assets/user.jpg';
+import { useMatch } from 'react-router-dom';
+import 'styles/about.css';
 
 const AboutScreen = () => {
+  const match = useMatch('/about');
+
   return (
-    <div>AboutScreen</div>
+    <section className={`about ${match ? 'section-show' : ''}`}>
+      <div className='about-me container'>
+        <div className="section-title">
+          <h2>About</h2>
+          <p>Learn more about me</p>
+        </div>
+
+        <div className='row'>
+          <div className='col-lg-4' 
+          // data-aos="fade-right"
+          >
+            <img src={user} className='img-fluid' alt='' />
+          </div>
+          <div className='col-lg-8 pt-4 pt-lg-0 content' 
+          // data-aos="fade-left"
+          >
+            <h3>Front-End web Developer</h3>
+            <p className='fst-italic'>
+              Hi, I'm Franklin, I have studied web application development 
+              and I plan to become a <br /> software engineer. I chose 
+              this profession because I am interested in solving 
+              problems  <br /> in digital environments, considering 
+              the most feasible optimal solutions.
+            </p>
+            <div className='row'>
+              <div className='col-lg-6'>
+                <ul>
+                  <li>
+                    <i className='bi bi-chevron-right'/> 
+                    <strong>Degree:</strong> 
+                    <span>Software Engineer Estudent</span>
+                  </li>
+                  <li>
+                    <i className='bi bi-chevron-right' />
+                    <strong>City:</strong>
+                    <span>Medellin-Colombia</span>
+                  </li>
+                  </ul>
+              </div>
+              <div className='col-lg-6'>
+                <ul>
+                  <li>
+                    <i className='bi bi-chevron-right' />
+                    <strong>Email:</strong>
+                    <span>devfranklinzapata@gmail.com</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              I consider myself a person with good communication skills.
+              I was part of the MisionTic project of the Ministry of TIC in
+              Colombia,  where I participated in software development groups,
+              and I was able to improve this skill, which I consider vital as a developer.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
   )
 }
 

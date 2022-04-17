@@ -1,0 +1,26 @@
+.about-me .content h3 {
+    @apply font-bold text-[26px];
+    color: #18d26e;
+}
+
+.about-me .content ul {
+    @apply list-none p-0;
+}
+
+.about-me .content ul li {
+    @apply mb-5 flex items-center;
+}
+
+.about-me .content ul strong {
+    @apply mr-[10px];
+}
+
+.about-me .content ul i {
+    @apply text-base mr-[5px];
+    color: #18d26e;
+    line-height: 0;
+}
+
+.about-me .content p:last-child {
+    @apply mb-0;
+}
