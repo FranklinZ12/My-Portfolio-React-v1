@@ -1,6 +1,6 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i");
 
 body {
@@ -44,10 +44,6 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-/* .container {
-  max-width: 1200px;
-  margin: 0 auto;
-} */
 
 section {
   overflow: hidden;
@@ -98,8 +94,9 @@ section .container {
 }
 
 .section-title p {
-  @apply m-0 -my-[8px] mx-0 text-4xl font-bold uppercase text-white;
+  @apply m-0 text-[36px] font-bold uppercase text-white;
   font-family: "Poppins", sans-serif;
+  margin: -15px 0 15px 0;
 }
 
 

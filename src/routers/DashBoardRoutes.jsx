@@ -10,7 +10,7 @@ const DashBoardRoutes = () => {
     return (
         <Fragment>
             <Navbar/>
-            <div className="container">
+            <div>
                 <Routes>
                     <Route path="about" element={<AboutScreen />} />
                     <Route path="resume" element={<ResumeScreen />} />
