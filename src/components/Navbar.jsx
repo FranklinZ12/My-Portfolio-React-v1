@@ -1,6 +1,10 @@
+import { useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-import '../styles/navbar.css'
+import '../styles/navbar.css';
+
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className='header'>
       <div className='container'>
@@ -57,8 +61,14 @@ const Navbar = () => {
                 Contact
               </NavLink>
             </li>
-          </ul>
-          <i className='fa-solid fa-bars mobile-nav-toggle'></i>
+          </ul>   
+            <i 
+            className={
+              `mobile-nav-toggle 
+              fa-solid fa-${open ? "x" : "bars"}`
+            }
+            onClick={() => setOpen(!open)}
+            />
         </nav>
 
         <div className='social-links'>
@@ -68,7 +78,7 @@ const Navbar = () => {
             rel='noopener noreferrer'
             className='linkedin'
             >
-            <i class="fa-brands fa-linkedin"></i>
+            <i className="fa-brands fa-linkedin"></i>
           </a>
           <a
             href='https://github.com/FranklinZ12'
@@ -76,7 +86,7 @@ const Navbar = () => {
             rel='noopener noreferrer'
             className='github'
             >
-            <i class="fa-brands fa-github-square"></i>
+            <i className="fa-brands fa-github-square"></i>
           </a>
         </div>
 
