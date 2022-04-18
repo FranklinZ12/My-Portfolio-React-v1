@@ -5,6 +5,7 @@ import { useMatch } from 'react-router-dom';
 import AOS from 'aos';
 import 'styles/about.css';
 import 'aos/dist/aos.css';
+import Title from 'components/Title';
 
 AOS.init();
 
@@ -16,10 +17,9 @@ const AboutScreen = () => {
       
       <div className='about-me container'>
 
-        <div className="section-title">
-          <h2>About</h2>
-          <p>Learn more about me</p>
-        </div>
+        <Title title='About'
+          subtitle='Learn more about me'
+        />
 
         <div className='row'>
           <div className='col-lg-4'

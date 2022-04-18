@@ -1,0 +1,47 @@
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume .resume-title {
+    @apply text-[26px] font-bold mt-5 mb-5 text-white;
+}
+
+.resume .resume-item {
+    @apply pt-0 pr-0 pb-5 pl-5 mt-[-2px] relative;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.resume .resume-item p{
+    @apply mt-0 mb-4
+}
+.resume .resume-item h4 {
+    @apply leading-[18px] text-lg font-semibold uppercase
+    mb-[10px];
+    font-family: "Poppins", sans-serif;
+    color: #18d26e;
+}
+
+.resume .resume-item h5 {
+    @apply text-base inline-block font-semibold 
+    py-[5px] px-[15px] mb-[10px];
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.resume .resume-item ul {
+    @apply pl-5 list-disc;
+}
+
+.resume .resume-item ul li {
+    @apply pb-[10px];
+}
+
+.resume .resume-item:last-child {
+    @apply pb-0;
+}
+
+.resume .resume-item::before {
+    @apply absolute w-4 h-4 rounded-[50px] left-[-9px]
+    top-0;
+    content: "";
+    background: #18d26e;
+    border: 2px solid #18d26e;
+}
