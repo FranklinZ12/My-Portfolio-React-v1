@@ -12,6 +12,7 @@ const Testimonials = () => {
             </div>
 
             <Swiper className="testimonials-slider"
+                data-aos="fade-up" data-aos-delay="100"
                 modules={[Pagination, Autoplay]}
                 pagination={{ clickable: true }}
                 speed={600}

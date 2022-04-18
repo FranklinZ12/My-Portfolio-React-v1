@@ -2,13 +2,18 @@ import user from 'assets/user.jpg';
 import Skills from 'components/about/Skills';
 import Testimonials from 'components/about/Testimonials';
 import { useMatch } from 'react-router-dom';
+import AOS from 'aos';
 import 'styles/about.css';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 const AboutScreen = () => {
   const match = useMatch('/about');
 
   return (
     <section className={`about ${match ? 'section-show' : ''}`}>
+      
       <div className='about-me container'>
 
         <div className="section-title">
@@ -18,12 +23,12 @@ const AboutScreen = () => {
 
         <div className='row'>
           <div className='col-lg-4'
-          // data-aos="fade-right"
+          data-aos="fade-right"
           >
             <img src={user} className='img-fluid' alt='' />
           </div>
           <div className='col-lg-8 pt-4 pt-lg-0 content'
-          // data-aos="fade-left"
+          data-aos="fade-left"
           >
             <h3>Front-End web Developer</h3>
             <p className='fst-italic mb-4 mt-2'>

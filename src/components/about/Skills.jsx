@@ -10,26 +10,29 @@ import CardSkills from './CardSkills';
 
 
 const Skills = () => {
-  return (
-      <div className='skills container'>
-          <div className='section-title'>
-              <h2>Skills</h2>
-          </div>
+    return (
+        <div className='skills container'>
+            <div className='section-title'>
+                <h2>Skills</h2>
+            </div>
 
-          <div className='skills-content'>
-              <div className='grid grid-cols-2 gap-y-9 gap-x-5 sm:grid-cols-4 lg:grid-cols-4'>
-                  <CardSkills img={react} name='REACTJS' />
-                  <CardSkills img={html5} name='HTML' />
-                  <CardSkills img={css} name='CSS' />
-                  <CardSkills img={js} name='JAVASCRIPT' />
-                  <CardSkills img={nj} name='NODEJS' />
-                  <CardSkills img={git} name='GIT' />
-                  <CardSkills img={github} name='GITHUB' />
-                  <CardSkills img={scrum} name='SCRUM' />
-              </div>
-          </div>
-      </div>
-  )
+            <div className='skills-content'>
+                <div
+                    className='grid grid-cols-2 gap-y-9 gap-x-5 
+                    sm:grid-cols-4 lg:grid-cols-4'
+                >
+                    <CardSkills img={react} name='REACTJS' />
+                    <CardSkills img={html5} name='HTML' />
+                    <CardSkills img={css} name='CSS' />
+                    <CardSkills img={js} name='JAVASCRIPT' />
+                    <CardSkills img={nj} name='NODEJS' />
+                    <CardSkills img={git} name='GIT' />
+                    <CardSkills img={github} name='GITHUB' />
+                    <CardSkills img={scrum} name='SCRUM' />
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default Skills
