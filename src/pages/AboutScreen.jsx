@@ -1,5 +1,6 @@
 import user from 'assets/user.jpg';
 import Skills from 'components/about/Skills';
+import Testimonials from 'components/about/Testimonials';
 import { useMatch } from 'react-router-dom';
 import 'styles/about.css';
 
@@ -69,7 +70,9 @@ const AboutScreen = () => {
 
       {/* ======= Skills  =======  */}
       <Skills />
-      {/* End Skills  */}
+
+      {/* ======= Testimonials ======= */}
+      <Testimonials />
 
     </section>
   )

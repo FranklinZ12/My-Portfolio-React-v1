@@ -32,3 +32,65 @@
     @apply max-w-2xl mx-auto py-16 px-4 
     sm:py-10 sm:px-6 lg:max-w-7xl lg:px-8;
 }
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
+    @apply overflow-hidden;
+}
+
+.testimonials .testimonial-item {
+    @apply box-content min-h-[320px];
+}
+
+.testimonials .testimonial-item .testimonial-img {
+    @apply w-[90px] rounded-full relative z-[2];
+    margin: -40px 0 0 40px;
+    border: 6px solid rgba(255, 255, 255, 0.12);
+}
+
+.testimonials .testimonial-item h3 {
+    @apply text-lg font-bold text-white;
+    margin: 10px 0 5px 45px;
+}
+
+.testimonials .testimonial-item h4 {
+    @apply text-sm ml-[45px];
+    color: #999;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+    @apply text-[26px];
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+    @apply inline-block -left-[5px] relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+    @apply inline-block -right-[5px] relative top-[10px];
+}
+
+.testimonials .testimonial-item p {
+    @apply italic mx-4 relative rounded-md z-[1]
+    pt-5 pr-5 pb-[60px] pl-5;
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.testimonials .swiper-pagination {
+    @apply mt-5 relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+    @apply w-3 h-3 opacity-100;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #18d26e;
+}

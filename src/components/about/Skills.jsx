@@ -17,7 +17,7 @@ const Skills = () => {
           </div>
 
           <div className='skills-content'>
-              <div className='grid grid-cols-4 gap-y-9 gap-x-5 sm:grid-cols-2 lg:grid-cols-4'>
+              <div className='grid grid-cols-2 gap-y-9 gap-x-5 sm:grid-cols-4 lg:grid-cols-4'>
                   <CardSkills img={react} name='REACTJS' />
                   <CardSkills img={html5} name='HTML' />
                   <CardSkills img={css} name='CSS' />
