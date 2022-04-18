@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, NavLink, useMatch } from 'react-router-dom';
 import '../styles/navbar.css';
-
+import cv from '../assets/cv-franklin-zapata.pdf';
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const match = useMatch('/');
@@ -89,6 +89,12 @@ const Navbar = () => {
             className='github'
             >
             <i className="bi bi-github"></i>
+          </a>
+          <a
+            href={cv} download='CV-Franklin-Zapata'
+          className='font-bold'
+          >
+            CV
           </a>
         </div>
       </div>
