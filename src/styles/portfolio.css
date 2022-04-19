@@ -1,0 +1,83 @@
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.portfolio .portfolio-item {
+    @apply mb-[30px];
+}
+
+.portfolio .portfolio-wrap {
+    @apply relative overflow-hidden z-[1];
+    transition: 0.3s;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.portfolio .portfolio-wrap::before {
+    @apply absolute left-[30px] right-[30px] top-[30px] 
+    bottom-[30px] z-[2] opacity-0;
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+    @apply opacity-0 absolute top-0 left-0
+    right-0 bottom-0 text-center z-[3] flex flex-col
+    justify-center items-center;
+    transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-info::before {
+    @apply block w-12 h-12 absolute top-[35px] left-[35px]
+    z-[9994];
+    content: "";
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    transition: all 0.5s ease 0s;
+}
+
+.portfolio .portfolio-wrap .portfolio-info::after {
+    @apply block w-12 h-12 absolute bottom-[35px]
+     right-[35px] z-[9994];
+    content: "";
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transition: all 0.5s ease 0s;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+    @apply text-xl text-white font-semibold;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+    @apply text-sm uppercase text-white p-0 m-0;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+    @apply text-center z-[4];
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+    @apply text-white my-0 mx-[2px] text-[28px]
+    inline-block;
+    transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+    color: #63eda3;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+    @apply top-0 left-0 right-0 bottom-0 opacity-100;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+    @apply opacity-100;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::before {
+    @apply top-[15px] left-[15px];
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::after {
+    @apply bottom-[15px] right-[15px];
+}
