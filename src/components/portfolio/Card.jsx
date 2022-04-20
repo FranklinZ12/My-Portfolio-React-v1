@@ -1,38 +1,36 @@
-import GLightbox from 'glightbox';
+import { Fragment, useState } from "react"
+import Modal from "./ModalDetails"
 
-const Card = ({ img, name, type }) => {
-    const portfolioDetailsLightbox = GLightbox({
-        selector: '.portfolio-details-lightbox',
-        width: '90%',
-        height: '90vh'
-    });
+
+const Card = ({ img, name, type, link, info, img2, img3 }) => {
+    const [show, setShow] = useState(false);
+
+
     return (
-        <div className='col-lg-4 col-md-6 portfolio-item'>
-            <div className='portfolio-wrap'>
-                <img src={img} className='img-fluid' alt='' />
-                <div className='portfolio-info'>
-                    <h4>{name}</h4>
-                    <p>{type}</p>
-                    <div className='portfolio-links'>
-                        <a href={img}
-                            className='portfolio-details-lightbox'
-                            data-title="My title"
-                            data-description="description here"
-                            data-desc-position="right"
-                            data-type="image"
-                            data-effect="fade"
-                            data-width="900px"
-                            data-height="auto"
-                            data-zoomable="true"
-                            data-draggable="true"
-                            title='Details'
-                        >
-                            <i className='bx bx-link' />
-                        </a>
+        <Fragment>
+            <div className='col-lg-4 col-md-6 portfolio-item'>
+                <div className='portfolio-wrap'>
+                    <img src={img} className='img-fluid' alt='' />
+                    <div className='portfolio-info'>
+                        <h4>{name}</h4>
+                        <p>{type}</p>
+                        <div className='portfolio-links'>
+                            <button
+                                onClick={() => setShow(!show)}
+                                className='portfolio-details-lightbox'
+                                title='Details'
+                            >
+                                <i className='bx bx-link' />
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <Modal state={show} setState={setShow}
+                title={name} type={type} link={link}
+                info={info} img1={img} img2={img2} img3={img3} />
+
+        </Fragment>
     )
 }
 

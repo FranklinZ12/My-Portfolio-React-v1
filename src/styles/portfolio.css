@@ -12,23 +12,19 @@
 }
 
 .portfolio .portfolio-wrap::before {
-    @apply absolute left-[30px] right-[30px] top-[30px] 
-    bottom-[30px] z-[2] opacity-0;
+    @apply absolute left-[30px] right-[30px] top-[30px] bottom-[30px] z-[2] opacity-0;
     content: "";
     background: rgba(0, 0, 0, 0.6);
     transition: all ease-in-out 0.3s;
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
-    @apply opacity-0 absolute top-0 left-0
-    right-0 bottom-0 text-center z-[3] flex flex-col
-    justify-center items-center;
+    @apply opacity-0 absolute top-0 left-0 right-0 bottom-0 text-center z-[3] flex flex-col justify-center items-center;
     transition: all ease-in-out 0.3s;
 }
 
 .portfolio .portfolio-wrap .portfolio-info::before {
-    @apply block w-12 h-12 absolute top-[35px] left-[35px]
-    z-[9994];
+    @apply block w-12 h-12 absolute top-[35px] left-[35px] z-[9994];
     content: "";
     border-top: 3px solid #fff;
     border-left: 3px solid #fff;
@@ -36,8 +32,7 @@
 }
 
 .portfolio .portfolio-wrap .portfolio-info::after {
-    @apply block w-12 h-12 absolute bottom-[35px]
-     right-[35px] z-[9994];
+    @apply block w-12 h-12 absolute bottom-[35px] right-[35px] z-[9994];
     content: "";
     border-bottom: 3px solid #fff;
     border-right: 3px solid #fff;
@@ -56,13 +51,12 @@
     @apply text-center z-[4];
 }
 
-.portfolio .portfolio-wrap .portfolio-links a {
-    @apply text-white my-0 mx-[2px] text-[28px]
-    inline-block;
+.portfolio .portfolio-wrap .portfolio-links button {
+    @apply text-white my-0 mx-[2px] text-[28px] inline-block;
     transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
+.portfolio .portfolio-wrap .portfolio-links button:hover {
     color: #63eda3;
 }
 
@@ -80,4 +74,72 @@
 
 .portfolio .portfolio-wrap:hover .portfolio-info::after {
     @apply bottom-[15px] right-[15px];
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+    @apply absolute left-0 right-0 top-0 bottom-0 
+     z-[998];
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio-details button{
+    @apply  w-full flex justify-end text-xl pr-4 ;
+}
+
+.portfolio-details .portfolio-title {
+    @apply text-[26px] font-bold mb-5;
+}
+
+.portfolio-details .portfolio-info {
+    @apply pt-[45px];
+}
+
+.portfolio-details .portfolio-info h3 {
+    @apply text-[22px] font-normal mb-5;
+}
+
+.portfolio-details .portfolio-info ul {
+    @apply list-none p-0 text-[15px];
+}
+
+.portfolio-details .portfolio-info ul li+li {
+    @apply mt-[10px];
+}
+
+.portfolio-details .portfolio-info p {
+    @apply text-[15px] pt-[15px] pr-0 pb-0 pl-0;
+}
+
+.portfolio-details a {
+    color: #18d26e;
+}
+
+.portfolio-details a:hover {
+    color: #35e888;
+}
+
+.portfolio-details i:hover {
+    color: #35e888;
+}
+
+@media (max-width: 992px) {
+    .portfolio-details .portfolio-info {
+        padding-top: 20px;
+    }
+}
+
+.portfolio-details .swiper-pagination {
+    @apply mt-3 relative;
+}
+
+.portfolio-details .swiper-pagination .swiper-pagination-bullet {
+    @apply w-3 h-3 opacity-100;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #18d26e;
 }
