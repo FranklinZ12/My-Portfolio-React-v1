@@ -1,0 +1,96 @@
+.contact .info-box {
+    @apply p-5 w-full;
+    color: #444444;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.contact .info-box i.bx {
+    @apply text-[24px] rounded-full p-[14px] float-left;
+    color: #18d26e;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contact .info-box h3 {
+    @apply text-xl font-bold m-[10px] mr-0 mb-2 ml-[68px];
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contact .info-box p {
+    @apply p-0 text-white text-sm mt-0 mr-0
+    mb-0 ml-[68px];
+}
+
+.contact .info-box .social-links {
+    @apply mt-[5px] mr-0 mb-0 ml-[68px] flex;
+}
+
+.contact .info-box .social-links a {
+    @apply text-lg inline-block text-white
+    mr-3;
+    transition: 0.3s;
+}
+
+.contact .info-box .social-links a:hover {
+    color: #18d26e;
+}
+
+.contact .email-form {
+    @apply p-[30px];
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.contact .email-form input,
+.contact .email-form textarea {
+    @apply rounded-none shadow-none text-sm border-none text-white;
+    background: rgba(255, 255, 255, 0.08);
+    transition: 0.3s;
+
+}
+
+.contact .email-form input:focus,
+.contact .email-form textarea:focus {
+    background-color: rgba(255, 255, 255, 0.11);
+}
+
+.contact .email-form input::-moz-placeholder,
+.contact .email-form textarea::-moz-placeholder {
+    @apply opacity-100;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.contact .email-form input::placeholder,
+.contact .email-form textarea::placeholder {
+    @apply opacity-100;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.contact .email-form input {
+    @apply py-[10px] px-[15px];
+}
+
+.contact .email-form textarea {
+    @apply py-3 px-[15px];
+}
+
+.contact .email-form button[disabled] {
+    @apply opacity-30 pointer-events-none;
+}
+
+.contact .email-form button[type=submit] {
+    @apply border-0 py-[10px] px-[30px] rounded-[4px] text-white;
+    background: #18d26e;
+    transition: 0.4s;
+}
+
+.contact .email-form button[type=submit]:hover {
+    background: #15bb62;
+}
+
+.contact .email-form .error-message {
+    @apply  text-left font-semibold;
+    color: #ed3c0d;
+}
+
+.contact .email-form .error-message br+br {
+    @apply mt-6;
+}
