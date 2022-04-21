@@ -4,7 +4,7 @@ import proyectaUser from '../../assets/proyecta/proyectaUser.jpeg';
 import calendar from '../../assets/calendarApp/calendarApp.jpeg';
 import calendarMain from '../../assets/calendarApp/calendarMain.jpeg';
 import calendarAdd from '../../assets/calendarApp/calendarAdd.jpeg';
-import wolfcode from '../../assets/wolfCode.jpeg';
+import wolfcode from '../../assets/wolfCode/wolfCode.jpeg';
 import ciaoPizza from '../../assets/ciaoPizza/ciaoPizza.jpeg';
 import ciaoRegister from '../../assets/ciaoPizza/ciaoRegister.jpeg';
 import heroApp from '../../assets/heroApp/heroApp.jpeg';
