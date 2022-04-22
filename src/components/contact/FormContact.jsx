@@ -1,22 +1,6 @@
 import { Formik } from "formik";
-import * as Yup from 'yup';
-
-const SignupSchema = Yup.object().shape({
-    name: Yup.string()
-        .min(3, 'Too Short!')
-        .max(20, 'Too Long!')
-        .required('Required'),
-    subject: Yup.string()
-        .min(3, 'Too Short!')
-        .max(20, 'Too Long!')
-        .required('Required'),
-    email: Yup.string()
-    .test('email', 'Invalid email address', value => { return /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value) })
-    .email('Invalid email')
-    .required('Required'),
-    message: Yup.string()
-    .min(2, 'Too Short!')
-});
+import emailjs from '@emailjs/browser';
+import { SignupSchema } from "../../utils/validation";
 
 const FormContact = () => {
     return (
@@ -31,7 +15,17 @@ const FormContact = () => {
             validationSchema={SignupSchema}
 
             onSubmit={(values) => {
-                return console.log(values);
+                return emailjs.send(
+                    process.env.REACT_APP_service_ID,
+                    process.env.REACT_APP_template_ID ,
+                    {
+                        from_name: values.name,
+                        message: values.message,
+                        subject: values.subject,
+                        user_email: values.email
+                    },
+                     process.env.REACT_APP_ID 
+                );
             }}
         >
             {

@@ -1,3 +1,4 @@
+import ByMy from "components/ByMy"
 import { Fragment } from "react"
 import { Route, Routes } from "react-router-dom"
 import Navbar from "../components/Navbar"
@@ -18,6 +19,7 @@ const DashBoardRoutes = () => {
                     <Route path="contact" element={<ContactScreen />} />
                 </Routes>
             </div>
+            <ByMy />
         </Fragment>
     )
 }
