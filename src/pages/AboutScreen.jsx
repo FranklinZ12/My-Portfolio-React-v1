@@ -1,4 +1,4 @@
-import user from 'assets/user.jpg';
+import user from 'assets/user.webp';
 import Skills from 'components/about/Skills';
 import Testimonials from 'components/about/Testimonials';
 import { useMatch } from 'react-router-dom';

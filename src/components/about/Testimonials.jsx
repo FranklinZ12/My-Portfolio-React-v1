@@ -1,4 +1,4 @@
-import mabel from '../../assets/mabel.jpg';
+import mabel from '../../assets/mabel.webp';
 import { Pagination, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
