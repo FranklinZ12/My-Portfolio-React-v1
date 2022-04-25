@@ -22,10 +22,10 @@ const AboutScreen = () => {
         />
 
         <div className='row'>
-          <div className='col-lg-4'
+          <div className='col-lg-4 flex justify-center'
           data-aos="fade-right"
           >
-            <img src={user} className='img-fluid' alt='' />
+            <img src={user} className='img-fluid rounded-2xl' alt='profile' />
           </div>
           <div className='col-lg-8 pt-4 pt-lg-0 content'
           data-aos="fade-left"
