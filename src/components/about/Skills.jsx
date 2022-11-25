@@ -2,6 +2,7 @@ import html5 from '../../assets/html-5.png';
 import css from '../../assets/css3.png';
 import react from '../../assets/react.png';
 import js from '../../assets/javascript.png';
+import java from '../../assets/java.png';
 import nj from '../../assets/nodejs.png';
 import git from '../../assets/git.png';
 import github from '../../assets/github.png';
@@ -29,6 +30,7 @@ const Skills = () => {
                     <CardSkills img={git} name='GIT' />
                     <CardSkills img={github} name='GITHUB' />
                     <CardSkills img={scrum} name='SCRUM' />
+                    <CardSkills img={java} name='JAVA' />
                 </div>
             </div>
         </div>
