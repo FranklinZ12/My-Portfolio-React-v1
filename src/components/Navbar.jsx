@@ -17,7 +17,7 @@ const Navbar = () => {
         </h1>
         <h2>
           I'm a passionate
-          <span> Front-End Web Developer</span> from Colombia
+          <span> Software Developer</span> from Colombia
         </h2>
         <nav className={`navbar ${open ? 'navbar-mobile' : '' }`}>
           <ul
