@@ -64,14 +64,15 @@ const ResumeScreen = () => {
           </div>
           <div className="col-lg-6">
             <h3 className="resume-title">Experience</h3>
-            <ResumeItem
+            {/* <ResumeItem
               career='FrontEnd web Developer'
               anios='sept - dic 2021·4 months'
               University='MisionTic2022|University of Antioquia'
               text='The experience I gained in the projects was in building graphical 
               interfaces, one was for research teams to carry out their projects and 
               keep track of their updates and the other was a user sales and product tracking system.'
-            />
+            /> */}
+            On the way
           </div>
         </div>
       </div>

@@ -30,7 +30,7 @@ const AboutScreen = () => {
           <div className='col-lg-8 pt-4 pt-lg-0 content'
           data-aos="fade-left"
           >
-            <h3>Front-End web Developer</h3>
+            <h3>Software Developer</h3>
             <p className='fst-italic mb-4 mt-2'>
               Hi, I'm Franklin, I have studied web application development
               and I plan to become a <br /> software engineer. I chose

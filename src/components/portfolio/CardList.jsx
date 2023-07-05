@@ -25,7 +25,7 @@ const CardList = () => {
               img3={proyectaUser}
               name='Proyecta'
               type='WEB APP'
-              link={' https://front-proyecta.herokuapp.com/'}
+              link={' https://github.com/ProyectaTeamMinTic'}
               info={'Proyecta es una aplicación web que permite a los usuarios registrarse y crear proyectos, además de poder ver los proyectos que han creado otros usuarios. Tambien, los usuarios pueden crear tareas, comentarios en cada proyecto y pueden subir archivos en cada proyecto.'
             }
           />
@@ -35,14 +35,14 @@ const CardList = () => {
               img3={calendarAdd}
               name='CalendarApp'
               type='WEB APP'
-              link={' https://front-calendarapp-mern.herokuapp.com/login/'}
+              link={' https://github.com/FranklinZ12/CalendarApp'}
               info={'CalendarApp es una aplicación web que permite a los usuarios registrarse y crear, borrar, actualizar y ver los eventos en un calendario.'}
           />
           <Card
               img={wolfcode}
               name='WolfCode'
               type='WEB APP'
-              link={' https://rocky-temple-35030.herokuapp.com/'}
+              link={' https://github.com/WolfCodeMintTic'}
               info={'WolfCode es una aplicación web de seguimiento de ventas y productos de los usuarios. API backend creada por mi equipo para hacer una API REST-CRUD. Utilizamos la metodologia SCRUM para organizar la forma en cómo trabajamos y llevamos el proyecto.'}
           />
           <Card
